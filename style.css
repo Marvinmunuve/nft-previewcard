@@ -1,52 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* reset default values  */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
- 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-img
-{
-  max width: 100%;
+P {
+  font-weight: 300;
 }
-body{
-   font-family: "Outfit", sans-serif;
-   font-size: 18px;
-   background-color:  hsl(217, 54%, 11%);
-   color :hsl (0, 0%, 100, 60%);
-   padding: 1.25rem;
+img {
+  max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
 
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+/* container box */
 .container {
-padding: 1.25rem;
-background-color:
-border-radius: 0.5rem;
+  padding: 1.25rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.container h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 1rem 0.5rem 0.5rem 0;
 }
 
+.container ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 8xp 0px 0px 8px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+/*!-- first child  reffers to the 0.4eth --> */
+.container ul li:first-child {
+  color: hsl(178, 100%, 50%);
+}
+.container ul li img {
+  margin-right: 0.5rem;
+}
+.container .itumbi {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.container .itumbi img {
+  width: 3.5rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.container .itumbi a span{
+color:  hsl(0, 0%, 100%);
+font-weight: 400;
+}
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px){
+  .container {
+    width: 450px;
+    margin: auto ;
+  }
+}
+  
 
 
-
-
-
-
-
-
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-
-
-
-
-
-  - Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
