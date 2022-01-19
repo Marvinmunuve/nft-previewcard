@@ -33,11 +33,41 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
 }
+.container .equi {
+  position: relative;
+}
+
+.container .equi div {
+  position: absolute;
+  top: 0;
+ background-color:  hsl(178, 100%, 50%, 60%);
+ width: 100%;
+ height: calc (100%-4px%);
+ z-index: 999; 
+ opacity: 0;
+ transition-duration: 0.3s;
+}
+
+.container .equi div:hover {
+ opacity: 1;
+ cursor: pointer;
+}
+
+.container .equi div img  {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+  
 .container h2 {
   color: hsl(0, 0%, 100%);
   margin: 1rem 0.5rem 0.5rem 0;
 }
-
+.container h2:hover {
+  color: aqua;
+  cursor: pointer;
+}
 .container ul {
   display: flex;
   text-align: center;
@@ -52,6 +82,7 @@ body {
 /*!-- first child  reffers to the 0.4eth --> */
 .container ul li:first-child {
   color: hsl(178, 100%, 50%);
+
 }
 .container ul li img {
   margin-right: 0.5rem;
@@ -69,10 +100,14 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
-.container .itumbi a span{
+.container .itumbi p span  {
 color:  hsl(0, 0%, 100%);
 font-weight: 400;
 }
+.container .itumbi p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+} 
 .attribution {
   font-size: 16px;
   text-align: center;
